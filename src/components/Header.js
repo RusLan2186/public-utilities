@@ -35,7 +35,7 @@ const Header = () => {
                 component='div'
                 sx={{ flexGrow: 3, position: 'relative', right: 80 }}
               >
-                Заплати и спи спокойно!
+                public utilities
               </Typography>
               <Typography
                 variant='h6'
