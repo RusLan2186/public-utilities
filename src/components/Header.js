@@ -33,9 +33,12 @@ const Header = () => {
               <Typography
                 variant='h4'
                 component='div'
-                sx={{ flexGrow: 3, position: 'relative', right: 80 }}
+                sx={{ flexGrow: 3, textTransform: 'capitalize', position: 'relative', right: 80 }}
               >
-                public utilities
+                <NavLink to='/info'>
+                  {' '}
+                  <span className='header__menu'>Public Utilites</span>
+                </NavLink>
               </Typography>
               <Typography
                 variant='h6'

@@ -20,7 +20,7 @@ const InputCount = ({
   return (
     <div style={{ width: '100%' }}>
       <div className='alert'>
-        {alert && <Alert severity='error'>Введите число больше 0 </Alert>}
+        {alert && <Alert severity='error'>Enter a number greater than 0 </Alert>}
       </div>
       <div className='count__item-wrapper'>
         <TextField
@@ -28,7 +28,7 @@ const InputCount = ({
           label={label}
           variant='outlined'
           value={countValue}
-          placeholder='Введите число'
+          placeholder='Enter number'
           onChange={(e) => changeCountValue(e.target.value)}
           autoComplete='off'
           sx={{
@@ -36,7 +36,7 @@ const InputCount = ({
           }}
         />
         <Button onClick={() => clickCountServices(countValue)} variant='contained'>
-          Рассчитать
+          Calculate
         </Button>
       </div>
     </div>

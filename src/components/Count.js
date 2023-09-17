@@ -58,7 +58,7 @@ const Count = () => {
 
   return (
     <div>
-      <h1 className='title'>Выберите категорию из списка</h1>
+      <h1 className='title'>Select a category from the list</h1>
       <div className='select'>
         <FormControl fullWidth>
           <InputLabel id='demo-simple-select-label'>Сategory</InputLabel>
@@ -69,36 +69,36 @@ const Count = () => {
             onChange={(e) => setCategory(e.target.value)}
             label='Choose Cathegory'
           >
-            <MenuItem value={10}>Холодная Вода</MenuItem>
-            <MenuItem value={20}>Горячая Вода</MenuItem>
-            <MenuItem value={30}>Электроэнергия</MenuItem>
-            <MenuItem value={40}>Газ</MenuItem>
-            <MenuItem value={50}>Отопление</MenuItem>
+            <MenuItem value={10}>Cold Water</MenuItem>
+            <MenuItem value={20}>Hot Water</MenuItem>
+            <MenuItem value={30}>Electricity</MenuItem>
+            <MenuItem value={40}>Gaz</MenuItem>
+            <MenuItem value={50}>Heating</MenuItem>
           </Select>
         </FormControl>
       </div>
       {category === 10 && (
         <h2 className='subtitle'>
-          Введите количество потребленных кубов холодной воды и нажмите "Рассчитать"
+          Enter the number of cubes of cold water consumed and click "Calculate"
         </h2>
       )}
       {category === 20 && (
         <h2 className='subtitle'>
-          Введите количество потребленных кубов горячей воды и нажмите "Рассчитать"
+          Enter the number of hot water cubes consumed and click "Calculate"
         </h2>
       )}
       {category === 30 && (
         <h2 className='subtitle'>
-          Введите количество потребленных киловатт электроэнергии и нажмите кнопку "Рассчитать"
+          Enter the number of kilowatts of electricity consumed and click the "Calculate" button
         </h2>
       )}
       {category === 40 && (
         <h2 className='subtitle'>
-          Введите количество потребленных кубов газа и нажмите кнопку "Рассчитать"
+          Enter the number of consumed cubic meters of gas and click the "Calculate" button
         </h2>
       )}
       {category === 50 && (
-        <h2 className='subtitle'>Введите количество м.кв и нажмите кнопку "Рассчитать"</h2>
+        <h2 className='subtitle'>Enter the number of sq.m. and click the "Calculate" button</h2>
       )}
       {category && (
         <InputCount
@@ -107,39 +107,39 @@ const Count = () => {
           alert={alert}
           changeAlert={setAlert}
           clickCountServices={clickCountServices}
-          label={'Данные'}
+          label={'Data'}
         ></InputCount>
       )}
 
       {coldWaterCount > 0 && (
         <p className='result'>
-          Холодная вода: <span>{coldWaterCount} гр </span>
+          Cold water: <span>{coldWaterCount} UA </span>
         </p>
       )}
 
       {hotWaterCount > 0 && (
         <p className='result'>
-          Горячая вода: <span>{hotWaterCount} гр</span>
+          Hot water: <span>{hotWaterCount} UA</span>
         </p>
       )}
       {enrgy > 0 && (
         <p className='result'>
-          Электроэнергия: <span>{enrgy} гр </span>
+          Electricity: <span>{enrgy} UA </span>
         </p>
       )}
       {gazCount > 0 && (
         <p className='result'>
-          Газ: <span>{gazCount} гр</span>{' '}
+          Gaz: <span>{gazCount} UA</span>{' '}
         </p>
       )}
       {heatingCount > 0 && (
         <p className='result'>
-          Отопление: <span>{heatingCount} гр</span>{' '}
+          Heating: <span>{heatingCount} UA</span>{' '}
         </p>
       )}
       {total > 0 && (
         <h3 className='total__summ'>
-          Общая сумма: <span>{total} гр </span>
+          Total amount: <span>{total} UA </span>
         </h3>
       )}
     </div>

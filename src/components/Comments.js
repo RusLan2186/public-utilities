@@ -12,7 +12,7 @@ const Comments = () => {
 
   return (
     <div className='comments-wrapper'>
-      <h1 className='title'>Комментарии</h1>
+      <h1 className='title'>Comments</h1>
       {comments.map((comment) => (
         <div className='comments-items' key={comment.id}>
           <span className='comments-name'> {comment.name}</span>

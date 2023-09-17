@@ -33,7 +33,7 @@ const Info = () => {
           </Grid>
         </div>
       ) : (
-        <h1 className='not__found '>Ничего не найдено</h1>
+        <h1 className='not__found '>Not found</h1>
       )}
 
       <Comments />
