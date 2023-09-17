@@ -20,11 +20,21 @@
 }
 .header__menu {
   color: white;
+  transition: 0.3s all;
+  &:hover {
+    color: aquamarine;
+    transition: 0.3s all;
+  }
 }
 .header__input {
   padding: 5px 7px;
   border-radius: 10px;
   width: 20%;
+  transition: 0.3s all;
+  &:focus {
+    transition: 0.3s all;
+    border: 2px solid aquamarine;
+  }
 }
 
 // info
